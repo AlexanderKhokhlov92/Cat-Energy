@@ -1,0 +1,274 @@
+.additional-goods_title {
+  font-size: 24px;
+  line-height: 24px;
+  width: 226px;
+  margin-left: 20px;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.additional-goods_item {
+  border-top: 1px solid $special_grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &:last-child {
+    border-bottom: 1px solid $special_grey;
+  }
+}
+
+.additional-goods_list {
+  margin-top: 35px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.green-line--after {
+  height: 2px;
+  background-color: $basic_green;
+  width: 100%;
+}
+.additional-goods_title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+.additional-goods_item-title {
+  color: $special_dark-grey-2;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  grid-column: span 2;
+  margin-top: 13px;
+}
+
+.additional-goods_item-text {
+  color: $special_dark-grey;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 13px;
+}
+
+.additional-goods_item-price {
+  color: $special_dark-grey;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 13px;
+  text-align: right;
+}
+.card_button--additional {
+  display: block;
+  width: 100%;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+  border: none;
+  background-color: $basic_green;
+  cursor: pointer;
+  margin-bottom: 19px;
+  margin-top: 15px;
+  grid-column: span 2;
+  &:hover {
+    background-color: $basic_green-2;
+  }
+  &:active > .card_button-text {
+    opacity: 0.3;
+  }
+}
+.promoution {
+  min-height: 289px;
+  background-color: $basic_green;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url('../../img/gift-photo-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 58px;
+  margin-bottom: 35px;
+}
+
+.promoution_wrapper {
+  width: 100%;
+}
+
+.promoution_image-text {
+  color: $white;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 161px;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.promoution_image {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .additional-goods_item {
+    border: 1px solid $special_grey;
+    padding-left: 38px;
+    padding-right: 38px;
+    grid-template-columns: 1fr 1fr 84px;
+  }
+  .additional-goods_list {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+  .additional-goods_item-title {
+    grid-column: 1;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 26px;
+  }
+  .additional-goods_item-text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align-last: right;
+    margin-top: 30px;
+  }
+  .additional-goods_item-price {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .card_button--additional {
+    grid-column: span 3;
+    margin-top: 25px;
+    margin-bottom: 28px;
+  }
+  .promoution {
+    background-image: url('../../img/gift-photo-tablet.jpg');
+    height: 200px;
+    min-height: 200px;
+    padding: 0;
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 78px;
+  }
+  .promoution_image-text {
+    margin-top: 0;
+    width: 161px;
+    text-align: left;
+    margin-top: 71px;
+    margin-right: 124px;
+  }
+  .promoution_image {
+    margin-left: 78px;
+    margin-top: 57px;
+  }
+  .additional-goods_title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 418px;
+    padding-left: 37px;
+    margin-left: 0;
+  }
+  .green-line--before {
+    width: 30px;
+    height: 2px;
+    background-color: $basic_green;
+  }
+  .additional-goods {
+    max-width: 769px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .additional-goods_title-wrapper {
+    margin-top: 68px;
+  }
+  .dot {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 30px 245px 245px 245px 245px 30px;
+    column-gap: 80px;
+  }
+  .additional-goods_list {
+    margin-right: 110px;
+    margin-left: 110px;
+    grid-row: 2;
+    grid-column: span 4;
+    width: 895px;
+    margin-top: 81px;
+    margin-bottom: 86px;
+  }
+  .additional-goods_title-wrapper {
+    margin-top: 75px;
+    grid-column: span 6;
+  }
+  .green-line--before {
+    width: 107px;
+    justify-self: end;
+  }
+  .additional-goods_item {
+    grid-template-columns: 333px 1fr 1fr 1fr;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $special_grey;
+    &:first-child {
+      border-top: 1px solid $special_grey;
+    }
+  }
+  .card_button--additional {
+    grid-column: 4;
+    width: auto;
+    width: 245px;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 17px;
+  }
+  .promoution_wrapper {
+    grid-row: 2;
+  }
+  .promoution {
+    flex-direction: column;
+    margin: 0;
+    height: 289px;
+    margin-top: 80px;
+    background-image: url('../../img/gift-photo-desktop.jpg');
+  }
+  .promoution_image {
+    margin: 0;
+    padding: 0;
+    margin-top: 56px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .promoution_image-text {
+    margin: 0;
+    padding: 0;
+    margin-top: 46.5px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .additional-goods_item-title {
+    margin-top: 0;
+    align-self: center;
+  }
+  .additional-goods_item-text {
+    margin-top: 0;
+    justify-self: start;
+    align-self: center;
+  }
+  .additional-goods_item-price {
+    margin-top: 0;
+    align-self: center;
+  }
+}

@@ -1,0 +1,36 @@
+.navigation_burger-icon {
+  height: 2px;
+  width: 18px;
+  background-color: black;
+  position: relative;
+  transition: 0.5s;
+  &::before {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    transition: 0.5s;
+  }
+  &::after {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    transition: 0.5s;
+  }
+}
+.button-active > .navigation_burger-icon {
+  width: 0;
+  &::before {
+    transform: translateY(8px) translateX(18px) rotate(-45deg);
+  }
+  &::after {
+    transform: translateY(-8px) translateX(18px) rotate(45deg);
+  }
+}

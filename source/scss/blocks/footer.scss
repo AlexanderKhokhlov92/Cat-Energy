@@ -1,0 +1,172 @@
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $basic_grey;
+  margin-top: -5px;
+}
+
+.icon-vk-svg {
+  width: 23px;
+  height: 16px;
+}
+.icon-vk-svg > path {
+  fill: $special_dark-grey-2;
+}
+.icon-inst-svg {
+  width: 16px;
+  height: 16px;
+}
+.icon-inst-svg > g {
+  fill: $special_dark-grey-2;
+}
+
+.icon-facebook-svg {
+  width: 22px;
+  height: 22px;
+}
+.icon-facebook-svg > path {
+  stroke: $special_dark-grey-2;
+}
+.footer_social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 21px;
+  border-bottom: 2px solid $border-color;
+  margin-top: 20px;
+}
+
+.footer_social-list-item {
+  &:first-child {
+    margin-right: 36px;
+    margin-left: auto;
+  }
+  &:last-child {
+    margin-left: 36px;
+    margin-right: auto;
+  }
+}
+
+.footer_social-list-link {
+  display: flex;
+  align-items: center;
+  &:hover > .icon-vk-svg > path {
+    fill: $basic_green;
+  }
+  &:hover > .icon-facebook-svg > path {
+    stroke: $basic_green;
+  }
+  &:hover > .icon-inst-svg > g {
+    fill: $basic_green;
+  }
+  &:active > .icon-vk-svg > path {
+    opacity: 0.3;
+  }
+  &:active > .icon-facebook-svg > path {
+    opacity: 0.3;
+  }
+  &:active > .icon-inst-svg > g {
+    opacity: 0.3;
+  }
+}
+
+.footer_logo-image {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+}
+.footer_logo-link {
+  padding-top: 39px;
+  display: block;
+  padding-bottom: 32px;
+  border-bottom: 2px solid $border-color;
+}
+.copyright {
+  font-size: 16px;
+  font-family: Arial;
+  color: $special_dark-grey;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-bottom: 22px;
+  &:hover > svg > g > .copyright_icon {
+    fill: $basic_green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.copyright_icon {
+  fill: $special_dark-grey-2;
+  width: 27px;
+  height: 34px;
+}
+.contacts_window--catalog--form {
+  background-color: $basic_grey;
+}
+
+@media (min-width: $tablet-width) {
+  .footer_social-list {
+    border-bottom: none;
+    padding: 0;
+  }
+  .footer_logo-link {
+    border-bottom: none;
+  }
+  .footer {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -5px;
+    justify-content: space-between;
+    padding-top: 54px;
+    padding-bottom: 62px;
+  }
+  .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .icon-vk-svg {
+    width: 30px;
+    height: 22px;
+  }
+  .icon-inst-svg {
+    width: 23px;
+    height: 23px;
+  }
+  .icon-facebook-svg {
+    width: 28px;
+    height: 33px;
+  }
+  .copyright > svg {
+    margin-left: 22px;
+  }
+  .footer_logo-link {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer_social-list {
+    margin: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .footer {
+    max-width: 1440px;
+    padding-top: 59px;
+    padding-bottom: 56px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .contacts_window--catalog--form {
+    background-color: $white;
+  }
+}
